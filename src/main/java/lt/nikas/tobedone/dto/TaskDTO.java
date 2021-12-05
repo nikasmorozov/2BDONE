@@ -8,10 +8,10 @@ import java.util.UUID;
 
 @Builder
 @Getter
-public class ToDoDTO {
+public class TaskDTO {
     private UUID uuid;
 
-    private LocalDateTime dateTime;
+    private LocalDateTime createdAt;
 
     private String description;
 

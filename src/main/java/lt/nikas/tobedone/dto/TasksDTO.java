@@ -7,6 +7,6 @@ import java.util.List;
 
 @Builder
 @Getter
-public class ToDosDTO {
-    private List<ToDoDTO> todos;
+public class TasksDTO {
+    private List<TaskDTO> tasks;
 }

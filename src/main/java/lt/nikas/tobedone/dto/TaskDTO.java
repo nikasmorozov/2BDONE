@@ -15,5 +15,5 @@ public class TaskDTO {
 
     private String description;
 
-    private Boolean isDone;
+    private Boolean isCompleted;
 }

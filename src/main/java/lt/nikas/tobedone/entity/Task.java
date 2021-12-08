@@ -8,7 +8,9 @@ import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Builder
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "task")
@@ -31,5 +33,5 @@ public class Task {
 
     @NotNull
     @Column(columnDefinition = "boolean default false")
-    private Boolean isDone;
+    private Boolean isCompleted;
 }

@@ -1,10 +1,12 @@
 package lt.nikas.tobedone.mapper;
 
+import lt.nikas.tobedone.dto.TaskDTO;
 import lt.nikas.tobedone.dto.TasksDTO;
 import lt.nikas.tobedone.entity.Task;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Component

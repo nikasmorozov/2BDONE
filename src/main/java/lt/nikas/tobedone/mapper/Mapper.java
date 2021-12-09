@@ -7,6 +7,5 @@ package lt.nikas.tobedone.mapper;
  */
 @FunctionalInterface
 public interface Mapper<E, R> {
-
     R mapToDomain(E data);
 }

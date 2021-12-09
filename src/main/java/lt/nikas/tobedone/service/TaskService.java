@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
-
 @Service
 @RequiredArgsConstructor
 public class TaskService {
@@ -52,7 +51,6 @@ public class TaskService {
         taskRepository.deleteById(uuid);
     }
 
-
     @Transactional
     public void updateTask(UUID uuid) {
 
@@ -60,8 +58,6 @@ public class TaskService {
 
         tempTask.setIsCompleted(!tempTask.getIsCompleted());
         taskRepository.save(tempTask);
-
-
     }
 
     public void deleteCompletedTasks(List<UUID> completedTasksUuids) {

@@ -9,4 +9,5 @@ public interface Endpoint {
     String TASKS = "/tasks/";
     String DELETE_TASK = "/tasks/delete/{" + UUID + "}";
     String DELETE_COMPLETED = "/tasks/deletecompleted/";
+    String LOGIN = "/login/";
 }

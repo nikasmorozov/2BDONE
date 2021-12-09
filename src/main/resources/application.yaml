@@ -15,14 +15,18 @@ spring:
     show-sql: true
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
     database: postgresql
     defer-datasource-initialization: true  #since spring boot 2.5.0 required for initialization
   sql:
     init:
       mode: always
-      data-locations: classpath:db/init-data.sql
+      data-locations:
+        - classpath:db/init-data.sql
+        - classpath:db/user-data.sql
   security:
     user:
       name: user
       password: user
+
+security.jwt.validity-time: 30  #in minutes
